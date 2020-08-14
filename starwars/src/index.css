@@ -5,3 +5,11 @@ body {
   background-image: url('./images/pk-bg.jpg');
   background-size: cover;
 }
+
+.pokemon-container{
+  border: 15px dotted #d2d2d2;
+  box-shadow: 0px 1px 6px -2px #807f7f;
+  border-radius: 8px;
+  padding-bottom:15%;
+}
+

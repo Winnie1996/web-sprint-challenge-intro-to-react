@@ -2,14 +2,13 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from "axios";
 import Header from "./components/header";
-// import Character from "./components/Character"
+import Character from "./components/Character"
 
 
 
 
 const App = () => {
   const [randomPokemon, setWildPokemon] = useState ([]);
-
 
 const pokeId = () => {
   const min = Math.ceil(1)
@@ -18,24 +17,26 @@ const pokeId = () => {
 }
 
 
-
 useEffect(() => {
   axios.get('https://pokeapi.co/api/v2/pokemon/' + pokeId())
     .then(response => {
       console.log(response.data)
       setWildPokemon(response.data);     
+      // console.log(response.data.sprites.other.official-artwork)
 })
 .catch((error) => {
   console.log(error);
+
 })
 }, [])
-
 
 
   return (
     <div className="App">
       <Header/>
+      <Character name = {randomPokemon.name} abilities = {randomPokemon.types} height = {randomPokemon.height} weight = {randomPokemon.weight}/>
     </div>
+    
   );
 }
 
