@@ -24,7 +24,7 @@ const App = () => {
   useEffect(() => {
     axios.get('https://pokeapi.co/api/v2/pokemon/' + randID)
       .then(response => {
-        // console.log(response.data)
+        console.log(response.data)
         
         setWildPokemon(response.data);
         // console.log(response.data.sprites.other["official-artwork"].front_default)
@@ -54,7 +54,7 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-        <Character PokemonImage = {getWildPokemon.sprites} Name = {getWildPokemon.name} Height = {getWildPokemon.height} Weight = {getWildPokemon.weight}/>
+        <Character PokemonType = {getWildPokemon.types} PokemonImage = {getWildPokemon.sprites} Name = {getWildPokemon.name} Height = {getWildPokemon.height} Weight = {getWildPokemon.weight}/>
     </div>
     
   );
