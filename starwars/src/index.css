@@ -2,6 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
+  background-image: url('./images/pk-bg.jpg');
   background-size: cover;
+}
+
+.poke-info{
+  border: 10px solid purple;
+  width:55%;
+  margin-left:21.3%;
+  background-color:orange;
+
+}
+
+h3{
+font-weight: bold;
+font-size:50px;
+
+}
+
+span{
+  font-size:100px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
 }
