@@ -6,10 +6,17 @@ body {
   background-size: cover;
 }
 
-.pokemon-container{
-  border: 15px dotted #d2d2d2;
-  box-shadow: 0px 1px 6px -2px #807f7f;
-  border-radius: 8px;
-  padding-bottom:15%;
+.poke-info{
+  border: 10px solid purple;
+  width:55%;
+  margin-left:21.3%;
+  background-color:orange;
+
+}
+
+h3{
+font-weight: bold;
+
+
 }
 
